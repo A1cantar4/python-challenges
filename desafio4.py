@@ -1,4 +1,6 @@
-# Se o cliente tiver dinheiro para comprar pão, exibe valor do troco
+# Revisão no Código: 15/07/2025
+# Projeto: Inserir um número float, calcula o "troco" e informa a quantidade do troco com pão
+# Usa Condicionais para cada situação e F-STRING formatada no print.
 cliente1 = float(input("\nDiga quanto você tem em R$: "))
 pao = 0.50
 print(f"\nO pão é R${pao}!")
