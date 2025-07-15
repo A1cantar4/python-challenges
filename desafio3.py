@@ -1,4 +1,6 @@
-# Diga 2 números, e exiba a soma e subtração deles.
+# Revisão no Código: 15/07/2025
+# Projeto: Digite 2 valores Inteiros, e é exibido as variáveis formatadas em F-String
+# Tanto da soma, como da subtração dos valores.
 numero1 = int(input("\nDiga um número: ").strip()) 
 numero2 = int(input("\nDiga outro número: ").strip())
 
