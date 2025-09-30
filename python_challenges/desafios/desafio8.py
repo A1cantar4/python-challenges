@@ -1,4 +1,4 @@
-from assets.static.styles import c_amarelo, c_vermelho, c_magenta, c_verde
+from python_challenges.assets.static.styles import c_amarelo, c_vermelho, c_magenta, c_verde
 
 class Quadrado():
     """ Classe para calcular o quadrado de um número """
@@ -19,6 +19,11 @@ class Quadrado():
                 c_amarelo(" é ") + 
                 c_verde(f"{self.calcula_quadrado()}"))
         
-
-pergunta = Quadrado(int(input(c_magenta(f"\nOlá, qual número você quer calcular? ").strip())))
-print(pergunta)
+def main():
+    while True:
+        pergunta = Quadrado(int(input(c_magenta(f"\nOlá, qual número você quer calcular? ").strip())))
+        print(pergunta)
+        continuar = input(c_amarelo("\nQuer calcular outro número? (s/n) ")).lower().strip()
+        if continuar != "s":
+            print(c_vermelho("\nSaindo..."))
+            break
