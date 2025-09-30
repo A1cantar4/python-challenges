@@ -11,6 +11,7 @@ C_STYLES = {
     "verde": Fore.GREEN,
     "amarelo": Fore.YELLOW,
     "magenta": Fore.MAGENTA,
+    "preto": Fore.BLACK,
 }
 
 def styled(text, c_style="branco"):
@@ -27,3 +28,4 @@ def c_ciano(text): return styled(text, "ciano")
 def c_verde(text): return styled(text, "verde")
 def c_amarelo(text): return styled(text, "amarelo")
 def c_magenta(text): return styled(text, "magenta")
+def c_preto(text): return styled(text, "preto")
