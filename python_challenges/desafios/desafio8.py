@@ -24,6 +24,6 @@ def main():
         pergunta = Quadrado(int(input(c_magenta(f"\nOlá, qual número você quer calcular? ").strip())))
         print(pergunta)
         continuar = input(c_amarelo("\nQuer calcular outro número? (s/n) ")).lower().strip()
-        if continuar != "s":
+        if continuar not in ["s", "sim", "yes", "yep", "si", "quero", "bora", "okay", "ss"]:
             print(c_vermelho("\nSaindo..."))
             break
